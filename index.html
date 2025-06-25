@@ -17,6 +17,81 @@
 
                     <h1>Formulário de matrícula</h1>
                     <p>Preencha os dados abaixo para matricular seu filho na educação infantil Estrelas do Amanhã</p>
+
+                    <form method="post" enctype="multipart/form-data">
+                        <fieldset class="child-info">
+                            <legend>Informações da criança</legend>
+
+                            <div class="input-wrapper">
+                                <label for="fullname">Nome completo</label>
+                                <input type="text" id="fullname" name="fullname"  placeholder="Digite o nome da criança">
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="">Data de nascimento</label>
+                                <input type="date" id="birth" lang="pt-br" >
+                            </div>
+
+                            <div class="select-wrappper">
+                                <label for="gender">Sexo</label>
+                                <select name="gender" id="gender">
+                                    <option value="female">Feminino</option>
+                                    <option value="male">Masculino</option>
+                                    <option value="NA">Prefiro não informar</option>
+                                </select>
+                            </div>
+
+                            <div class="textarea-wrapper">
+                                <label for="medical-info">Informações médicas</label>
+                                <textarea name="medical-info" id="medical-info" cols="30" rows="5" placeholder="Especifique aqui se a criança possui alguma condição médica"></textarea>
+                            </div>
+
+                            <div class="droparea-wrapper">
+                                <label for="birth-file">Certidão de nascimento</label>
+                                <div class="dropzone">
+                                    <input type="file" id="birth-file" name="birth-file">
+                                    <img src="assets/icons/cloud-upload.png" alt="">
+                                    <p>
+                                        Clique aqui para <br>
+                                        selecionar os arquivos
+                                    </p>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="adress">
+                            <legend>Endereço residencial</legend>
+
+                            <div class="input-wrapper">
+                                <label for="cep">CEP</label>
+                                <input type="text" name="cep" name="cep">
+                            </div>
+
+                                <div class="flex">
+                                    <div class="inpput-wrapper flex-2" >
+                                        <label for="street">Rua</label>
+                                        <input type="text" name="street" name="street" value="Rua dar Flores" disabled>
+                                    </div>
+
+                                    <div class="inpput-wrapper flex-1">
+                                        <label for="number">Número</label>
+                                        <input type="number" name="number" name="number">
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="inpput-wrapper flex-2" >
+                                        <label for="city">Cidade</label>
+                                        <input type="text" name="city" name="city" value="São Paulo" disabled>
+                                    </div>
+
+                                    <div class="inpput-wrapper flex-1">
+                                        <label for="state">Estado</label>
+                                        <input type="text" name="state" name="state" disabled>
+                                    </div>
+                                </div>
+                        </fieldset>
+                    </form>
                 </div>
             </main>
 
