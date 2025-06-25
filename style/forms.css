@@ -47,6 +47,7 @@ input{
     }
 
     &[required] + .error{
+        margin-top: .25rem;
         display: flex;
         align-items: center;
         gap: .25rem;
@@ -57,4 +58,10 @@ input{
     &:valid + .error{
         display: none;
     }
+}
+
+.actions-wrapper{
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem;
 }
